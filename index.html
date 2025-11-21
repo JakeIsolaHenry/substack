@@ -263,61 +263,50 @@
 
         /* Search Block Styles */
         .search-block {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f7;
             padding: 32px;
             border-radius: 12px;
             margin: 48px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #e8e8e8;
         }
 
         .search-block h3 {
-            color: white;
-            font-size: 22px;
+            color: #666;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 16px;
-            text-align: center;
+            margin-bottom: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .search-terms {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 12px;
-            justify-content: center;
-            margin-top: 20px;
         }
 
         .search-term {
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(10px);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
+            background: white;
+            color: #333;
+            padding: 16px 24px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid #e0e0e0;
+            text-align: left;
         }
 
         .search-term:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #fafafa;
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-color: #d0d0d0;
         }
 
-        .search-icon {
-            display: inline-block;
-            margin-right: 6px;
-        }
-
-        /* Alternate search block style */
-        .search-block-alt {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-
-        .search-block-green {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
 
         .engagement-bar {
             display: flex;
@@ -399,16 +388,16 @@
 
             <!-- FIRST SEARCH BLOCK -->
             <div class="search-block">
-                <h3>🔍 Find Your Perfect Organization Tools</h3>
+                <h3>Related Searches</h3>
                 <div class="search-terms">
                     <a href="https://www.google.com/search?q=best+organizational+apps" class="search-term" target="_blank">
-                        <span class="search-icon">🔎</span> best organizational apps
+                        best organizational apps
                     </a>
                     <a href="https://www.google.com/search?q=task+management+app" class="search-term" target="_blank">
-                        <span class="search-icon">✓</span> task management app
+                        task management app
                     </a>
                     <a href="https://www.google.com/search?q=productivity+app+for+teams" class="search-term" target="_blank">
-                        <span class="search-icon">👥</span> productivity app for teams
+                        productivity app for teams
                     </a>
                 </div>
             </div>
@@ -448,16 +437,16 @@
 
             <!-- SECOND SEARCH BLOCK -->
             <div class="search-block-alt search-block">
-                <h3>📱 Discover Top Organization Software</h3>
+                <h3>Related Searches</h3>
                 <div class="search-terms">
                     <a href="https://www.google.com/search?q=work+organization+software" class="search-term" target="_blank">
-                        <span class="search-icon">💼</span> work organization software
+                        work organization software
                     </a>
                     <a href="https://www.google.com/search?q=project+planning+app" class="search-term" target="_blank">
-                        <span class="search-icon">📊</span> project planning app
+                        project planning app
                     </a>
                     <a href="https://www.google.com/search?q=app+to+stay+organized" class="search-term" target="_blank">
-                        <span class="search-icon">⚡</span> app to stay organized
+                        app to stay organized
                     </a>
                 </div>
             </div>
@@ -474,16 +463,16 @@
 
             <!-- THIRD SEARCH BLOCK -->
             <div class="search-block-green search-block">
-                <h3>🎯 Streamline Your Workflow</h3>
+                <h3>Related Searches</h3>
                 <div class="search-terms">
                     <a href="https://www.google.com/search?q=digital+planner+app" class="search-term" target="_blank">
-                        <span class="search-icon">📝</span> digital planner app
+                        digital planner app
                     </a>
                     <a href="https://www.google.com/search?q=team+organization+tools" class="search-term" target="_blank">
-                        <span class="search-icon">🤝</span> team organization tools
+                        team organization tools
                     </a>
                     <a href="https://www.google.com/search?q=personal+organizer+app" class="search-term" target="_blank">
-                        <span class="search-icon">📱</span> personal organizer app
+                        personal organizer app
                     </a>
                 </div>
             </div>
@@ -512,16 +501,16 @@
 
             <!-- FOURTH SEARCH BLOCK -->
             <div class="search-block">
-                <h3>⚙️ Boost Your Productivity</h3>
+                <h3>Related Searches</h3>
                 <div class="search-terms">
                     <a href="https://www.google.com/search?q=workflow+management+app" class="search-term" target="_blank">
-                        <span class="search-icon">🔄</span> workflow management app
+                        workflow management app
                     </a>
                     <a href="https://www.google.com/search?q=daily+schedule+app" class="search-term" target="_blank">
-                        <span class="search-icon">📅</span> daily schedule app
+                        daily schedule app
                     </a>
                     <a href="https://www.google.com/search?q=organizational+software+for+business" class="search-term" target="_blank">
-                        <span class="search-icon">🏢</span> organizational software for business
+                        organizational software for business
                     </a>
                 </div>
             </div>
