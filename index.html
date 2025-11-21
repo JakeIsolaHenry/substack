@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Stay Organized in 2025</title>
+    <title>How To Be Organised in 2025 - The Wardrobe Edit</title>
     <style>
         * {
             margin: 0;
@@ -12,350 +12,604 @@
         }
 
         body {
-            font-family: Georgia, 'Times New Roman', serif;
-            background: #fff;
-            color: #000;
-            line-height: 1.7;
-            font-size: 20px;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 60px 20px 100px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
         }
 
         .header {
-            margin-bottom: 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            border-radius: 4px;
+        }
+
+        .subscribe-btn {
+            background: #ff6719;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .subscribe-btn:hover {
+            background: #e55a0f;
+        }
+
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
         .category {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 12px;
+            letter-spacing: 1px;
             color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         h1 {
             font-size: 42px;
             font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 20px;
-            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
         }
 
         .subtitle {
-            font-size: 24px;
+            font-size: 18px;
             color: #666;
-            font-weight: 400;
-            margin-bottom: 30px;
-            line-height: 1.4;
+            margin-bottom: 24px;
         }
 
-        .author-info {
+        .author {
             display: flex;
             align-items: center;
-            gap: 12px;
             margin-bottom: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #e6e6e6;
         }
 
         .author-avatar {
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 18px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ddd;
+            margin-right: 12px;
         }
 
-        .author-details {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 15px;
+        .author-info {
+            display: flex;
+            flex-direction: column;
         }
 
         .author-name {
             font-weight: 600;
-            color: #000;
-        }
-
-        .publish-date {
-            color: #666;
             font-size: 14px;
         }
 
-        .article-content p {
-            margin-bottom: 28px;
-            font-size: 20px;
-        }
-
-        .article-content h2 {
-            font-size: 32px;
-            font-weight: 700;
-            margin: 50px 0 25px;
-            line-height: 1.3;
-        }
-
-        .article-content h3 {
-            font-size: 24px;
-            font-weight: 700;
-            margin: 40px 0 20px;
-            line-height: 1.3;
-        }
-
-        .related-searches-block {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 24px;
-            margin: 40px 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-
-        .related-searches-title {
+        .author-date {
             font-size: 13px;
-            font-weight: 600;
             color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #1a1a1a;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+        }
+
+        .content em {
+            font-style: italic;
+        }
+
+        .content a {
+            color: #ff6719;
+            text-decoration: underline;
+        }
+
+        .subscribe-box {
+            background: #f8f8f8;
+            padding: 32px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .subscribe-box p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .email-form {
+            display: flex;
+            gap: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .email-submit {
+            background: #ff6719;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 48px 0 24px 0;
+            color: #1a1a1a;
+        }
+
+        .references-box {
+            background: #f8f8f8;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .references-title {
+            font-weight: 600;
+            font-size: 18px;
             margin-bottom: 16px;
         }
 
-        .search-links {
+        .reference-item {
             display: flex;
-            flex-direction: column;
-            gap: 12px;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
         }
 
-        .search-link {
+        .reference-item:last-child {
+            border-bottom: none;
+        }
+
+        .reference-name {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .reference-desc {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .content ul {
+            margin: 24px 0;
+            padding-left: 24px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+        }
+
+        .content ol {
+            margin: 24px 0;
+            padding-left: 24px;
+        }
+
+        .notion-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 32px auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .phone-images {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 32px 0;
+        }
+
+        .phone-image {
+            width: 200px;
+            border-radius: 12px;
+        }
+
+        .product-images {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 32px 0;
+        }
+
+        .product-image {
+            width: 120px;
+        }
+
+        /* Search Block Styles */
+        .search-block {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 32px;
+            border-radius: 12px;
+            margin: 48px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .search-block h3 {
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .search-terms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-term {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .search-term:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .search-icon {
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        /* Alternate search block style */
+        .search-block-alt {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .search-block-green {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .engagement-bar {
+            display: flex;
+            gap: 24px;
+            padding: 20px 0;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 32px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .engagement-item {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 12px 16px;
-            background: white;
-            border-radius: 6px;
-            text-decoration: none;
-            color: #000;
-            font-size: 16px;
-            font-weight: 500;
-            transition: all 0.2s;
-            border: 1px solid #e6e6e6;
-            cursor: pointer;
-        }
-
-        .search-link:hover {
-            background: #f0f0f0;
-            transform: translateX(2px);
-        }
-
-        .search-link:active {
-            background: #e6e6e6;
-            transform: scale(0.98);
-        }
-
-        .search-arrow {
-            color: #999;
-            font-size: 18px;
-        }
-
-        .app-mention {
-            background: #f8f9fa;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
+            gap: 8px;
         }
 
         @media (max-width: 768px) {
-            body {
-                font-size: 18px;
-            }
-
-            .container {
-                padding: 40px 20px 80px;
-            }
-
             h1 {
                 font-size: 32px;
             }
 
-            .subtitle {
-                font-size: 20px;
+            .search-block {
+                padding: 24px 20px;
             }
 
-            .article-content h2 {
-                font-size: 26px;
-                margin: 40px 0 20px;
+            .search-terms {
+                gap: 8px;
             }
 
-            .article-content h3 {
-                font-size: 22px;
-                margin: 30px 0 15px;
+            .search-term {
+                font-size: 12px;
+                padding: 8px 16px;
             }
 
-            .article-content p {
-                font-size: 18px;
+            .phone-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-images {
+                flex-wrap: wrap;
             }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo"></div>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="header">
-            <div class="category">Productivity</div>
-            <h1>How to Stay Organized in 2025</h1>
-            <div class="subtitle">The digital tools and strategies that actually work for staying on top of your life</div>
-            
+        <div class="category">THE WARDROBE EDIT</div>
+        <h1>How To Be Organised in 2025</h1>
+        <p class="subtitle">20 ideas to make you feel like you have your s**t together...</p>
+        
+        <div class="author">
+            <div class="author-avatar"></div>
             <div class="author-info">
-                <div class="author-avatar">SK</div>
-                <div class="author-details">
-                    <div class="author-name">Sarah Kim</div>
-                    <div class="publish-date">Jan 10, 2025 · 8 min read</div>
-                </div>
+                <div class="author-name">ANNA NEWTON</div>
+                <div class="author-date">DEC 28, 2024</div>
             </div>
         </div>
 
-        <div class="article-content">
-            <p>We're three weeks into 2025, and if you're anything like me, those ambitious New Year's resolutions are starting to feel less like promises and more like distant memories. The truth is, staying organized isn't about willpower—it's about systems.</p>
+        <div class="content">
+            <p>Creating content online for 15 years means I've experienced many eras - <em>the ombre dip-dye era, the disco pants era, and the ukulele music as a backing track for the entire YouTube video era</em>. In 2017, I had a major life organisation era, which resulted in the release of my very own book, <em><a href="#">'An Edited Life'</a></em> two years later. Writing that book squeezed every single drop of tidy tips out of me, so it's not a topic I touch upon as much these days, but as someone who's the triple threat of a Virgo-born eldest daughter with a Type A personality, it's in my blood. I live for this!!! So, five years post-publication, here are my very best tips for getting things in order to make your life run oh so smoothly that are <em>actually</em> doable and easy to implement...</p>
 
-            <p>I spent the last six months testing every productivity app, workflow method, and organizational framework I could find. What I discovered was surprising: the tools that work best aren't necessarily the most complex or feature-rich. They're the ones you'll actually use.</p>
+            <div class="subscribe-box">
+                <p>The Wardrobe Edit is a reader-supported publication. To receive weekly style musings directly to your inbox, consider becoming a paid subscriber to support my work and gain full access to the archive of 200+ posts.</p>
+                <form class="email-form">
+                    <input type="email" class="email-input" placeholder="Type your email...">
+                    <button type="submit" class="email-submit">Subscribe</button>
+                </form>
+            </div>
 
-            <div class="related-searches-block">
-                <div class="related-searches-title">Explore More</div>
-                <div class="search-links">
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.45'); return false;">
-                        <span>Best organizational apps</span>
-                        <span class="search-arrow">→</span>
+            <!-- FIRST SEARCH BLOCK -->
+            <div class="search-block">
+                <h3>🔍 Find Your Perfect Organization Tools</h3>
+                <div class="search-terms">
+                    <a href="https://www.google.com/search?q=best+organizational+apps" class="search-term" target="_blank">
+                        <span class="search-icon">🔎</span> best organizational apps
                     </a>
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.60'); return false;">
-                        <span>Task management app</span>
-                        <span class="search-arrow">→</span>
+                    <a href="https://www.google.com/search?q=task+management+app" class="search-term" target="_blank">
+                        <span class="search-icon">✓</span> task management app
+                    </a>
+                    <a href="https://www.google.com/search?q=productivity+app+for+teams" class="search-term" target="_blank">
+                        <span class="search-icon">👥</span> productivity app for teams
                     </a>
                 </div>
             </div>
 
-            <h2>The Three-System Framework</h2>
+            <h2>DIGITAL ORGANISATION</h2>
+            
+            <p><strong>Treat your screengrabs as your to-do list.</strong> To me, it's the quickest way to note something down to refer back to later. Right now, my folder includes a jacket I've seen that I want to mention in a newsletter, a Substack I want to remember to become a paid subscriber of, and Pandora's top-books of 2024 list that I want to add to my Notion to-read list. I don't set a particular time to sort through them, but every couple of days, whenever I get the chance, I'll flick through them all, action everything, and then delete them.</p>
 
-            <p>After months of experimentation, I've landed on what I call the Three-System Framework. You need exactly three digital tools to stay organized: a brain dump system, a project management system, and a time-blocking system. More than that and you'll spend more time managing your tools than actually getting things done.</p>
+            <div class="references-box">
+                <div class="references-title">📋 References</div>
+                <div class="reference-item">
+                    <div>
+                        <div class="reference-name">Important Links</div>
+                        <div class="reference-desc">All Tabs</div>
+                    </div>
+                    <div class="reference-desc">Notes • Link</div>
+                </div>
+                <div class="reference-item">
+                    <div>
+                        <div class="reference-name">Baby Checklist</div>
+                    </div>
+                    <div class="reference-desc">docs.google.com/spr...drives</div>
+                </div>
+                <div class="reference-item">
+                    <div>
+                        <div class="reference-name">Books AE Garden</div>
+                        <div class="reference-desc">A place to visit with Ralph, up in Heyworth's Heath</div>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div>
+                        <div class="reference-name">MakeupAndThings</div>
+                        <div class="reference-desc">🎭 Drive - Angie Smith's favourite Table</div>
+                    </div>
+                </div>
+            </div>
 
-            <p>Let's start with the brain dump. This is where <span class="app-mention">Notion</span> absolutely shines. Think of it as your digital filing cabinet meets journal meets database. Every fleeting thought, random idea, or task that pops into your head? It goes straight into Notion. The beauty of Notion isn't its complexity—though it can handle incredibly complex workflows—it's that it meets you where you are.</p>
-
-            <p>I have a simple "Inbox" page where everything lands first. Meeting notes, article ideas, things to remember to buy, projects I want to start someday—it all goes here. Then, once a week during my Sunday review, I process the inbox and move things to their proper homes. This system has genuinely changed how my brain works. Knowing I have a reliable capture system means I no longer feel the mental burden of trying to remember everything.</p>
-
-            <div class="related-searches-block">
-                <div class="related-searches-title">Related Topics</div>
-                <div class="search-links">
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.75'); return false;">
-                        <span>Productivity app for teams</span>
-                        <span class="search-arrow">→</span>
+            <!-- SECOND SEARCH BLOCK -->
+            <div class="search-block-alt search-block">
+                <h3>📱 Discover Top Organization Software</h3>
+                <div class="search-terms">
+                    <a href="https://www.google.com/search?q=work+organization+software" class="search-term" target="_blank">
+                        <span class="search-icon">💼</span> work organization software
                     </a>
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.55'); return false;">
-                        <span>Work organization software</span>
-                        <span class="search-arrow">→</span>
+                    <a href="https://www.google.com/search?q=project+planning+app" class="search-term" target="_blank">
+                        <span class="search-icon">📊</span> project planning app
+                    </a>
+                    <a href="https://www.google.com/search?q=app+to+stay+organized" class="search-term" target="_blank">
+                        <span class="search-icon">⚡</span> app to stay organized
                     </a>
                 </div>
             </div>
 
-            <h2>Visual Thinking for Creative Work</h2>
+            <p><strong>The best apps for organisation.</strong> Here are the apps I use on a daily basis that help keep things tidy, <em>digitally</em>...</p>
 
-            <p>Here's something I learned the hard way: not everything belongs in text-based systems. Some projects need visual thinking. That's where <span class="app-mention">Canva</span> became unexpectedly essential to my organization strategy.</p>
+            <ul>
+                <li><strong><a href="#">Notion</a></strong> - an app I use every single day. It's pretty involved and set-up can be a little laborious (I used templates from <a href="#">here</a> for work and <a href="#">here</a> for personal stuff), but it's where I organise my LIFE. I have one workspace for work where I set-up my content calendar and chop that down into daily tasks. Then I have a personal workspace where there are lists for everything; <em>hotels I want to visit, my new year goals, recipes I want to try, my workout schedule for the month, packing lists, a general to-do list</em> - it's basically my second brain, but it means I never forget anything.</li>
+                
+                <li><strong>Notes</strong> - don't sleep on just good ol' basic Notes app. I love that you can have shared notes - like the grocery list or Christmas present to-buy lists that I share with my husband - but I have random lists in there too. <em>'Cute things Ralph does'</em> is a list of exactly that and a list of my top 10 songs of all time is a great thing to bring out with friends after a few drinks because YES CARELESS WHISPER IS ON THERE.</li>
+            </ul>
 
-            <p>Yes, Canva is primarily a design tool. But I use it as a visual planning workspace. When I'm mapping out content calendars, planning events, or organizing research for articles, I create boards in Canva. The ability to use templates, arrange elements visually, and see everything at once has been incredibly valuable for creative projects that don't fit neatly into task lists.</p>
+            <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Notion Personal Planner" class="notion-image">
 
-            <p>I have a "2025 Vision Board" in Canva that's become my go-to reference point. It's not just motivational images—it's a visual representation of my quarterly goals, complete with milestones, key metrics, and the projects that ladder up to each goal. Every Monday morning, I spend five minutes reviewing it. This simple ritual keeps me connected to the bigger picture in a way that text-based systems never could.</p>
-
-            <h3>The Wardrobe Organization Revolution</h3>
-
-            <p>Organization isn't just about work and productivity. One of my biggest pain points was actually my closet. Every morning started with decision fatigue about what to wear, complicated by the fact that I could never remember what clothes I actually owned when buried under winter coats or packed away seasonally.</p>
-
-            <p>Enter <span class="app-mention">Indyx</span>, an app I discovered almost by accident. It's a digital wardrobe organizer, and it's been legitimately life-changing. I spent one weekend photographing all my clothes—yes, all of them—and uploading them to the app. Now I can plan outfits digitally, track what I wear most often, and instantly remember I own that perfect blazer for an upcoming event.</p>
-
-            <div class="related-searches-block">
-                <div class="related-searches-title">Continue Reading</div>
-                <div class="search-links">
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.85'); return false;">
-                        <span>Project planning app</span>
-                        <span class="search-arrow">→</span>
+            <!-- THIRD SEARCH BLOCK -->
+            <div class="search-block-green search-block">
+                <h3>🎯 Streamline Your Workflow</h3>
+                <div class="search-terms">
+                    <a href="https://www.google.com/search?q=digital+planner+app" class="search-term" target="_blank">
+                        <span class="search-icon">📝</span> digital planner app
                     </a>
-                    <a href="#" class="search-link" onclick="showMonetization(this, '$1.70'); return false;">
-                        <span>App to stay organized</span>
-                        <span class="search-arrow">→</span>
+                    <a href="https://www.google.com/search?q=team+organization+tools" class="search-term" target="_blank">
+                        <span class="search-icon">🤝</span> team organization tools
+                    </a>
+                    <a href="https://www.google.com/search?q=personal+organizer+app" class="search-term" target="_blank">
+                        <span class="search-icon">📱</span> personal organizer app
                     </a>
                 </div>
             </div>
 
-            <p>The app also tracks cost-per-wear, which has completely changed how I think about clothing purchases. That $200 dress I wore once? Expensive. The $60 jeans I've worn 47 times? Actually cheap. This data-driven approach to my wardrobe has saved me money and reduced the mental overhead of getting dressed every day.</p>
+            <p><strong>Take an hour out of your day for some digital organisation.</strong> I did this the other day and it felt SO so good:</p>
 
-            <h2>Time Blocking: The Missing Piece</h2>
+            <ol>
+                <li>If you're anything like me, then your storage is full on your laptop and you need to make some SPACE. I found the quickest way to do this was to clear out and delete my downloads folder.</li>
+                
+                <li>Tidy up your desktop, pop files into the relevant folders - is there anything you could remove or delete entirely? I also updated my desktop because I always have the wallpaper as my vision board for the year: 2025 - it's ON.</li>
+                
+                <li>Organise your internet browser. I made bookmarks to my most-visited sites to make them easy to get to and sorted through my reading list which was a MESS.</li>
+                
+                <li>Do the same for your phone. I try to have everything on one homescreen - with my most visited apps out and the rest in folders, and then I've made my widget homepage <em>(if you swipe right)</em> a Notion quicklinks section.</li>
+            </ol>
 
-            <p>Having all your tasks and projects organized is meaningless if you don't have time to work on them. This is where most organizational systems fail. They help you capture and categorize, but they don't help you execute.</p>
+            <div class="phone-images">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Phone Home Screen" class="phone-image">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Phone Widget Screen" class="phone-image">
+            </div>
 
-            <p>Time blocking has been my solution. Every Sunday evening, I review my calendar and my task list, and I literally block out time for everything. Not just meetings—everything. Writing time, email processing time, workout time, even "unstructured thinking" time. If it's important enough to do, it's important enough to have dedicated time on my calendar.</p>
+            <div class="subscribe-box">
+                <p>Join Anna Newton's subscriber chat<br>Available in the Substack app and on web</p>
+                <button class="email-submit">Join chat</button>
+            </div>
 
-            <p>The key insight here is that your calendar isn't just for meetings with other people. It's for meetings with yourself. That 2-hour block labeled "Deep Work: Article Writing" is just as non-negotiable as a meeting with my boss would be.</p>
+            <!-- FOURTH SEARCH BLOCK -->
+            <div class="search-block">
+                <h3>⚙️ Boost Your Productivity</h3>
+                <div class="search-terms">
+                    <a href="https://www.google.com/search?q=workflow+management+app" class="search-term" target="_blank">
+                        <span class="search-icon">🔄</span> workflow management app
+                    </a>
+                    <a href="https://www.google.com/search?q=daily+schedule+app" class="search-term" target="_blank">
+                        <span class="search-icon">📅</span> daily schedule app
+                    </a>
+                    <a href="https://www.google.com/search?q=organizational+software+for+business" class="search-term" target="_blank">
+                        <span class="search-icon">🏢</span> organizational software for business
+                    </a>
+                </div>
+            </div>
 
-            <h2>The Integration Strategy</h2>
+            <h2>LIFE ORGANISATION</h2>
 
-            <p>These three systems—Notion for brain dumps and knowledge management, Canva for visual planning, and Indyx for wardrobe organization—work together to cover different aspects of life that need organizing. But the magic happens in how they integrate with your actual workflow.</p>
+            <p><strong>Create a weekly rota.</strong> This is something we're implementing for the first time, but I think having designated days to do household tasks will help us to create some ease and flow around tasks that we just LOVE to put off and then become a pain in the ass when we need to do them all at the same time. I don't think it's helpful to go <em>overboard</em> here, but even just automating these three things will be a big help I reckon:</p>
 
-            <p>Every Sunday, I have a one-hour review session. I process my Notion inbox, update my Canva vision board with the week's priorities, and plan my outfits for important meetings in Indyx. This weekly ritual means I start Monday with clarity and confidence.</p>
+            <ul>
+                <li>Meal planning and a weekly food shop</li>
+                <li>Laundry days</li>
+                <li>Bed linen and towel laundry days</li>
+            </ul>
 
-            <p>Throughout the week, I'm constantly capturing in Notion, referring to my Canva boards for creative projects, and using Indyx to eliminate morning decision fatigue. The system runs on autopilot because each tool serves a specific, non-overlapping purpose.</p>
+            <p><strong>Have a handbag kit.</strong> I'm always swapping around my handbag, so I have a little pouch that's easy to move between bags so I always have what I need on hand. Mine includes:</p>
 
-            <h2>What Actually Works in 2025</h2>
+            <ul>
+                <li><strong><a href="#">Space NK Mini Travel Bag</a></strong> with: <em>hand sanitiser, lip balm, mini perfume, mini hand cream, compact mirror, tampons, cleansing wipe, tissues, blister plasters, a Tide Pen™, a pen, hairbands, ear plugs, pill box™</em> with paracetamol and mints.</li>
+            </ul>
 
-            <p>After testing dozens of apps and approaches, here's what I've learned: organization isn't about having the perfect system. It's about having a good-enough system that you'll actually use consistently. The Three-System Framework works because it's simple, covers the essential bases, and doesn't require hours of maintenance.</p>
+            <div class="product-images">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Product 1" class="product-image">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Product 2" class="product-image">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Product 3" class="product-image">
+                <img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" alt="Product 4" class="product-image">
+            </ul>
 
-            <p>Notion handles your brain. Canva handles your vision. Indyx handles your appearance. Everything else? It can probably wait, or it's already covered by one of these tools if you're creative about how you use them.</p>
+            <p style="text-align: center; font-style: italic; color: #666; margin-top: -16px;">A non-easy, but extremely useful edit.</p>
 
-            <p>The real secret to staying organized in 2025 isn't finding more tools—it's ruthlessly limiting yourself to the essential ones and mastering them. Three systems, one weekly review, and the discipline to actually use them. That's it. That's the whole game.</p>
+            <p><strong>Buy a charging cube.</strong> If, like me, you have a million things to charge overnight, there's a high chance you can plug it all in <a href="#">in this bad boy</a>. It also means whenever I travel I just unplug this and take the whole thing with me.</p>
 
-            <p>Your turn. What's working for you?</p>
+            <p><strong>When you just can't find the motivation.</strong> <a href="#">This 60-minute timer is what you need</a>. Of course you can do the good ol' 'Pomodoro Method' with it - <em>work for 25 minutes, have a 5 minute break and repeat</em> - but if ever there's something that I'm majorly putting off, I put an hour on the clock, put away my phone and crack on. It has a very high success rate for me.</p>
+
+            <p><strong>Bulk buy sensible things.</strong> I don't think we need to be bulk buying <em>everything</em>, but there are a few household and everyday items that I just don't want to be buying on a monthly basis, you know? I will always buy larger quantities in one go of shower gel <a href="#">(I use these refills)</a>, shampoo, conditioner and dry-shampoo, toothpaste and floss-sticks. Then I subscribe and save with our cleaning supplies <a href="#">(we subscribe to Neat)</a>, <a href="#">loo roll</a> and healthy bits like <a href="#">AGT</a> and <a href="#">protein powder</a>.</p>
+
+            <p><strong>Make your s**t drawer vertical.</strong> Look we all have a s**t we need to find a home for - <em>spare buttons, blu-tac, drawing pins, a takeaway menu from 2010</em> - just try to make that home as organised as possible. I've found <a href="#">a stacking set of drawers</a> the better option to having it all laid out in one drawer, as it makes it all easier to find and simple to organise (and keep that way). I've had it like this for over 10 years now.</p>
+
+            <div class="subscribe-box">
+                <p>Get access to exclusive subscriber-only content and support independent journalism.</p>
+                <form class="email-form">
+                    <input type="email" class="email-input" placeholder="Type your email...">
+                    <button type="submit" class="email-submit">Subscribe</button>
+                </form>
+            </div>
+
+            <p><strong>A niche, but great recommendation.</strong> Whilst I'm sharing storage tips, this <a href="#">battery organiser</a> is very handy, as anyone with kids knows, you're going to need more batteries than you'll ever imagine for all the toys and remotes and everything else that seems to need them.</p>
+
+            <div class="engagement-bar">
+                <div class="engagement-item">❤️ 7.3K</div>
+                <div class="engagement-item">💬 145</div>
+                <div class="engagement-item">🔄 586</div>
+            </div>
+
         </div>
     </div>
 
     <script>
-        function showMonetization(link, amount) {
-            const rect = link.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-            
-            const popup = document.createElement('div');
-            popup.style.position = 'absolute';
-            popup.style.left = (rect.left + scrollLeft + rect.width / 2 - 30) + 'px';
-            popup.style.top = (rect.top + scrollTop - 20) + 'px';
-            popup.style.zIndex = '10000';
-            popup.style.fontSize = '24px';
-            popup.style.fontWeight = '700';
-            popup.style.color = '#10b981';
-            popup.style.pointerEvents = 'none';
-            popup.style.textShadow = '0 2px 4px rgba(0,0,0,0.2)';
-            popup.textContent = amount;
-            
-            popup.animate([
-                { opacity: 1, transform: 'translateY(0) scale(0.5)' },
-                { opacity: 1, transform: 'translateY(-30px) scale(1.2)' },
-                { opacity: 0, transform: 'translateY(-60px) scale(1)' }
-            ], {
-                duration: 1500,
-                easing: 'ease-out'
+        // Email form submission
+        document.querySelectorAll('.email-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for subscribing!');
             });
-            
-            document.body.appendChild(popup);
-            
-            setTimeout(() => {
-                popup.remove();
-            }, 1500);
-        }
+        });
+
+        // Subscribe button
+        document.querySelectorAll('.subscribe-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.querySelector('.subscribe-box').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add smooth scroll to all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
